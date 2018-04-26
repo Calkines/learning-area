@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            img{
+                width: 320px;
+            }
+        </style>
+    </head>
+    <picture>
+        <source media="(max-width: 199px)" srcset="100-200.png">
+        <source media="(max-width: 299px)" srcset="200-300.png">
+        <source media="(max-width: 399px)" srcset="300-400.png">
+        <source media="(max-width: 499px)" srcset="400-500.png">
+        <source media="(max-width: 599px)" srcset="500-600.png">
+        <img src="elva-800w.jpg" alt="Chris and his daughter"/>
+    </picture>
+    <img srcset="100-200.png,
+                 200-300.png 1.2x,
+                 300-400.png 1.4x,
+                 400-500.png 1.6x,
+                 elva-fairy-800w.jpg 2x"
+        src="elva-fairy-800w.jpg" alt="Chris daugther as a fairy">
+</html>
