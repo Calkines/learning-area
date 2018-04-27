@@ -7,7 +7,7 @@
   </head>
   <body>
     <p>This is my page</p>    
-    <form>
+    <form action="teste" method="POST">
       <h1>Payment form</h1>
       <p>Required field are fallowed by <strong><abbr title="required">*</abbr></strong>.</p>
       <section>
@@ -34,7 +34,7 @@
               <span>Name: </span>
               <strong><abbr title="required">*</abbr></strong>
             </label>
-            <input type="text" id="name" name="username">
+            <input type="xyz" id="name" name="username">
           </p>
           <p>
             <label for="mail">
@@ -58,7 +58,7 @@
               <span>Card type:</span>
               <strong><abbr title="required">*</abbr></strong>
             </label>
-            <select id="card" name="usercard">
+            <select id="card" name="usercard" multiple>
               <option value="visa">Visa</option>
               <option value="mc">Mastercard</option>
               <option value="amex">American Express</option>
@@ -81,6 +81,20 @@
           </p>
       </section>
       <p> <button type="submit">Validate the payment</button> </p>
+      <label for="myFruit">What's your favorite fruit?</label>
+<input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+<datalist id="mySuggestion">
+  <option>Apple</option>
+  <option>Banana</option>
+  <option>Blackberry</option>
+  <option>Blueberry</option>
+  <option>Lemon</option>
+  <option>Lychee</option>
+  <option>Peach</option>
+  <option>Pear</option>
+</datalist>
     </form>
+
+    
   </body>
 </html>

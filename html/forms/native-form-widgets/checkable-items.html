@@ -7,13 +7,13 @@
 </head>
 
 <body>
-    <form>
+    <form action="/bla" method="POST">
         <fieldset>
           <legend>Choose all the vegetables you like to eat</legend>
           <ul>
             <li>
               <label for="carrots">Carrots</label>
-              <input type="checkbox" checked id="carrots" name="carrots" value="carrots">
+              <input type="checkbox" checked id="carrots" name="carrots" >
             </li>
             <li>
               <label for="peas">Peas</label>
@@ -38,7 +38,7 @@
           <ul>
             <li>
               <label for="soup">Soup</label>
-              <input type="radio" checked id="soup" name="meal" value="soup">
+              <input type="radio" id="soup" name="meal" value="soup">
             </li>
             <li>
               <label for="curry">Curry</label>
@@ -58,6 +58,7 @@
             </li>
           </ul>
         </fieldset>
+        <button type="submit">Send data</button>
     </form>
 </body>
 
