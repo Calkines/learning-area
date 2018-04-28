@@ -25,7 +25,7 @@
       </style>
     </head>
     <body>
-      <form method="post" action="{{ url_for('hello') }}">
+      <form method="get" action="{{ url_for('hello') }}">
         <div>
           <label for="say">What greeting do you want to say?</label>
           <input name="say" id="say" value="Hi">
@@ -33,6 +33,10 @@
         <div>
           <label for="to">Who do you want to say it to?</label>
           <input name="to" value="Mom">
+        </div>
+        <div>
+          <label for="teste">What do you want to do?</label>
+          <input name="teste" value="Dance with me?">
         </div>
         <div>
           <button>Send my greetings</button>
